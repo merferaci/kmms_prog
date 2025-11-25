@@ -42,29 +42,29 @@ const PY::MenuItem* PY::study_go_back(const MenuItem* current){
 }
 
 const PY::MenuItem* PY::algebra_summ(const MenuItem* current){
-    std::cout << "Сложение - это основа математики!" << std::endl;
+    std::cout << "Сложение:" << std::endl;
     std::cout << "a + b = c" << std::endl;
-    std::cout << "Пример: 2 + 3 = 5" << std::endl << std::endl;
+    std::cout << "Пример: 4 + 3 = 7" << std::endl << std::endl;
     return current->parent;
 }
 
 const PY::MenuItem* PY::algebra_substract(const MenuItem* current){
-    std::cout << "Вычитание - обратная операция сложению!" << std::endl;
+    std::cout << "Вычитание:" << std::endl;
     std::cout << "a - b = c" << std::endl;
-    std::cout << "Пример: 5 - 3 = 2" << std::endl << std::endl;
+    std::cout << "Пример: 4 - 3 = 1" << std::endl << std::endl;
     return current->parent;
 }
 
 const PY::MenuItem* PY::algebra_multiply(const MenuItem* current){
-    std::cout << "Умножение - это многократное сложение!" << std::endl;
+    std::cout << "Умножение:" << std::endl;
     std::cout << "a × b = c" << std::endl;
-    std::cout << "Пример: 2 × 3 = 6" << std::endl << std::endl;
+    std::cout << "Пример: 4 × 3 = 12" << std::endl << std::endl;
     return current->parent;
 }
 
 const PY::MenuItem* PY::algebra_divide(const MenuItem* current){
-    std::cout << "Деление - обратная операция умножению!" << std::endl;
-    std::cout << "a ÷ b = c" << std::endl;
+    std::cout << "Деление:" << std::endl;
+    std::cout << "a разделить на b = c" << std::endl;
     std::cout << "Пример: 6 ÷ 3 = 2" << std::endl << std::endl;
     return current->parent;
 }
@@ -75,14 +75,12 @@ const PY::MenuItem* PY::algebra_go_back(const MenuItem* current){
 }
 
 const PY::MenuItem* PY::mat_analusis_dif(const MenuItem* current){
-    std::cout << "Дифференциальное исчисление - изучение производных!" << std::endl;
-    std::cout << "f'(x) = lim(h→0) [f(x+h) - f(x)]/h" << std::endl << std::endl;
+    std::cout << "Дифференциальное исчисление - это изучение производных!" << std::endl;
     return current->parent;
 }
 
 const PY::MenuItem* PY::mat_analusis_int(const MenuItem* current){
-    std::cout << "Интегральное исчисление - изучение интегралов!" << std::endl;
-    std::cout << "∫f(x)dx = F(x) + C" << std::endl << std::endl;
+    std::cout << "Интегральное исчисление - это изучение интегралов!" << std::endl;
     return current->parent;
 }
 
