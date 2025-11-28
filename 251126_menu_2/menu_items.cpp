@@ -21,10 +21,10 @@ const PY::MenuItem PY::SPBGU_GO_BACK = {
 
 namespace {
     const PY::MenuItem* const spbgu_children[] = {
+		&PY::SPBGU_GO_BACK,
 		&PY::SPBGU_PM_PY,
 		&PY::SPBGU_MAT_MECH,
-		&PY::SPBGU_LING,
-        &PY::SPBGU_GO_BACK
+		&PY::SPBGU_LING
     };
     const int spbgu_size = sizeof(spbgu_children) / sizeof(spbgu_children[0]);
 }
@@ -51,11 +51,11 @@ const PY::MenuItem PY::UNIVERSITY_GO_BACK = {
 
 namespace {
     const PY::MenuItem* const university_children[] = {
+		&PY::UNIVERSITY_GO_BACK,
         &PY::UNIVERSITY_SPBGU,
         &PY::UNIVERSITY_ITMO,
         &PY::UNIVERSITY_POLITECH,
-        &PY::UNIVERSITY_LETI,
-        &PY::UNIVERSITY_GO_BACK
+        &PY::UNIVERSITY_LETI
     };
     const int university_size = sizeof(university_children) / sizeof(university_children[0]);
 }
@@ -70,8 +70,8 @@ const PY::MenuItem PY::EXIT = {
 
 namespace {
     const PY::MenuItem* const main_children[] = {
-        &PY::UNIVERSITY, 
-        &PY::EXIT
+		&PY::EXIT,
+        &PY::UNIVERSITY
     };
     const int main_size = sizeof(main_children) / sizeof(main_children[0]);
 }

@@ -27,8 +27,7 @@ const PY::MenuItem* PY::exit(const MenuItem* current){
 }
 
 const PY::MenuItem* PY::university_spbgu(const MenuItem* current){
-    std::cout << current->title << std::endl << std::endl;
-    return current->parent;
+	return PY::show_menu(current);
 }
 
 const PY::MenuItem* PY::university_itmo(const MenuItem* current){
