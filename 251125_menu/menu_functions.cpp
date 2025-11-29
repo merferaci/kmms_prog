@@ -57,15 +57,15 @@ const PY::MenuItem* PY::algebra_substract(const MenuItem* current){
 
 const PY::MenuItem* PY::algebra_multiply(const MenuItem* current){
     std::cout << "Умножение:" << std::endl;
-    std::cout << "a × b = c" << std::endl;
-    std::cout << "Пример: 4 × 3 = 12" << std::endl << std::endl;
+    std::cout << "a * b = c" << std::endl;
+    std::cout << "Пример: 4 * 3 = 12" << std::endl << std::endl;
     return current->parent;
 }
 
 const PY::MenuItem* PY::algebra_divide(const MenuItem* current){
     std::cout << "Деление:" << std::endl;
     std::cout << "a разделить на b = c" << std::endl;
-    std::cout << "Пример: 6 ÷ 3 = 2" << std::endl << std::endl;
+    std::cout << "Пример: 6 / 3 = 2" << std::endl << std::endl;
     return current->parent;
 }
 
